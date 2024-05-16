@@ -2,7 +2,7 @@ package models
 
 import "task-manager/db"
 
-func Get(id string) (todo Todo, err error) {
+func Get(id int64) (todo Todo, err error) {
 	conn, err := db.OpenConnection()
 
 	if err != nil {
