@@ -2,7 +2,7 @@
 port = "9000"
 
 [database]
-name = "api_todo"
+name = "task_manager"
 host = "localhost"
-user = ""
-pass = ""
+user = "admin"
+pass = "1234"

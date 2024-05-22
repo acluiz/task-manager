@@ -21,5 +21,4 @@ func Update(id int64, todo Todo) (int64, error) {
 	}
 
 	return res.RowsAffected()
-
 }

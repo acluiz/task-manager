@@ -15,5 +15,5 @@ func Insert(todo Todo) (id int64, err error) {
 
 	err = conn.QueryRow(sql, todo.Title, todo.Description, todo.Done).Scan(&id)
 	
-	return id, nil
+	return
 }

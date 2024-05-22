@@ -26,11 +26,11 @@ func Create(w http.ResponseWriter, r *http.Request) {
 			"Error": true,
 			"Message": fmt.Sprintf("Ocorreu um erro ao tentar inserir: %v", err),
 		}
-	}
-
-	res = map[string]any{
-		"Error": false,
-		"Message": fmt.Sprintf("Todo inserido com sucesso. ID: %d", id),
+	} else {
+		res = map[string]any{
+			"Error": false,
+			"Message": fmt.Sprintf("Todo inserido com sucesso. ID: %d", id),
+		}
 	}
 
 	w.Header().Add("Content-Type", "application/json")

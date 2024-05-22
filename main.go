@@ -7,6 +7,7 @@ import (
 	"task-manager/handlers"
 
 	"github.com/go-chi/chi"
+	_ "github.com/lib/pq"
 )
 
 func main() {
